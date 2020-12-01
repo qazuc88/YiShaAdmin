@@ -71,7 +71,7 @@ namespace YiSha.Service.CoinManage
             var expression = LinqExtensions.True<CoinEntity>();
             if (param != null)
             {
-                expression.And(x => x.CoinName.Contains(param.CoinName));
+                expression=expression.And(x => x.CoinName.Contains(param.CoinName));
             }
             return expression;
         }
