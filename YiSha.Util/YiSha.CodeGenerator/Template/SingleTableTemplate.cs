@@ -979,7 +979,8 @@ namespace YiSha.CodeGenerator.Template
 
             if (!id)
             {
-                throw new Exception("数据库表必须有主键Id字段");
+                //todo:xx 不抛异常
+                //throw new Exception("数据库表必须有主键Id字段");
             }
             if (baseIsDelete && baseVersion && baseModifyTime && baseModifierId && baseCreateTime && baseCreatorId)
             {
